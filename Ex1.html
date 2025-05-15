@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function ObterResultado(x) {
+            if (x > 10 || x < 0) {
+                return ("Nota inválida.")
+            } else if (x == 10) {
+                return ("Parabéns!!! Você tirou 10. Está aprovado.")
+            } else if (x >= 7) {
+                return ("Você foi aprovado.")
+            }
+            else if (x < 7 && x >= 4) {
+                return ("Você está de recuperação.")
+            }
+            else {
+                return ("Você foi reprovado.")
+            }
+
+        }
+
+        let nota = prompt("Insira sua nota:")
+        let result = ObterResultado(nota)
+        alert(result)
+
+
+
+    </script>
+</body>
+
+</html>
